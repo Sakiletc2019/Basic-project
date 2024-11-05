@@ -1,0 +1,133 @@
+/* Default styles (Light Theme) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Theme Toggle Button */
+.theme-btn {
+    background-color: #0099ff; /* Green background */
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Full width across the calculator */
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.theme-btn:hover {
+    background-color: #0099ff; /* Slightly darker green on hover */
+}
+
+.theme-btn:active {
+    background-color: #aa99ff; /* Even darker on active click */
+}
+
+/* Dark Theme styles for theme button */
+body.dark-theme .theme-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-theme .theme-btn:hover {
+    background-color: #555;
+}
+
+body.dark-theme .theme-btn:active {
+    background-color: #444;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.calculator {
+    width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    background-color: #333;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    padding: 20px;
+    min-height: 60px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:active {
+    background-color: #ccc;
+}
+
+.equals {
+    background-color: #4CAF50;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.zero {
+    grid-column: span 1;
+}
+
+.add{
+    grid-row: span 2;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme .calculator {
+    border: 1px solid #444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .display {
+    background-color: #222;
+    color: #ffffff;
+}
+
+body.dark-theme .btn {
+    background-color: #333;
+    color: #ffffff;
+}
+
+body.dark-theme .btn:active {
+    background-color: #555;
+}
+
+body.dark-theme .equals {
+    background-color: #28a745;
+    color: #ffffff;
+}
